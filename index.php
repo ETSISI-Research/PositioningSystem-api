@@ -1,12 +1,12 @@
 <?php
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 use \Slim\Middleware\HttpBasicAuthentication\PdoAuthenticator;
 
 $isDevMode = true;
-$srcPaths = array(__DIR__."/api/src");
+$srcPaths = array(__DIR__."/src");
 $config = Setup::createAnnotationMetadataConfiguration($srcPaths, $isDevMode, null, null, false);
 
 $conn = array(
@@ -36,14 +36,14 @@ require 'modules/Contacts.php';
 require 'modules/Snapshots.php';
 
 $pdo = getPDO();
-$app->add(
+/*$app->add(
 	new \Slim\Middleware\HttpBasicAuthentication([
 	    "secure" => false,
 	    "relaxed" => ["localhost"],
 	    "authenticator" => new PdoAuthenticator([
 	        "pdo" => $pdo
 	    ])
-	]));
+	]));*/
 
 function getPDO()
 {
@@ -52,12 +52,21 @@ function getPDO()
 
 function getId()
 {
+	$email = 'imponet@test.com';
   $pdo = getPDO();
   $statement = $pdo->prepare("SELECT id FROM users WHERE email = :email");
-  $statement->bindParam('email', $_SERVER['PHP_AUTH_USER']);
+  //$statement->bindParam('email', $_SERVER['PHP_AUTH_USER']);
+	$statement->bindParam('email', $email);
   $statement->execute();
   return $statement->fetch(PDO::FETCH_OBJ)->id;
 }
+
+$app->get('/test',	function (){
+	// TODO
+	// this should generate jwt and return it back
+	echo json_encode(array("success" => "true"));
+});
+
 
 $app->get('/authenticate',	function (){
   // TODO

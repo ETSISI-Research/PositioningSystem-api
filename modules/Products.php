@@ -51,7 +51,7 @@ function getAllProducts($entityManager, $status) {
 				$db3 = $entityManager->getRepository('Products')->findBy(array('subfamily' => $subfamily, "status" => $status));
 				foreach ($db3 as $product) {
 					$productx = array(
-		                'id' => $product->getId(),
+		                "id" => $product->getId(),
 		                'name' => $product->getName(),
 		                'description' => $product->getDescription(),
 		                'partnerName' => $product->getPartner()->getName(),

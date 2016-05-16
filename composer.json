@@ -5,9 +5,9 @@
         "symfony/yaml": "2.*"
     },
     "autoload": {
-        "psr-0": {"": "api/src/"},
+        "psr-0": {"": "src"},
         "psr-4": {
-            "Slim\\Middleware\\": "src"
+            "Slim\\Middleware\\": "src2"
         }
     }
 }
