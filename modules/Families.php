@@ -8,7 +8,10 @@ $app->get('/families/:projectId', function ($projectId) use ($entityManager){
         echo getFamilies($entityManager, $projectId);
 });
 
-$app->post('/families/:projectId', 'addFamily');
+$app->post('/families', function () use ($entityManager){
+	addFamily($entityManager);
+});
+
 $app->put('/families/:id', 'updateFamily');
 
 $app->delete('/families/:familyId', function ($familyId) use ($entityManager){
@@ -54,7 +57,7 @@ function getFamilies($entityManager, $projectId)
 
 
 
-function addFamily($projectId) {
+function addFamily($entityManager) {
 	$request = Slim::getInstance()->request();
 	$family = json_decode($request->getBody());
 	$sql = "INSERT INTO families (Project_Id, name, description, Partner_Id, creationDate) VALUES (:projectId, :name, :description, :Partner_id, CURRENT_TIMESTAMP())";
@@ -98,6 +101,7 @@ function updateFamily($id) {
 	$body = $request->getBody();
 	$family = json_decode($body);
 	$sql = "UPDATE families SET name=:name, description=:description, Partner_Id=:Partner_id, active=:active WHERE id=:id";
+
 	try {
 		$db = getConnection();
 		$stmt = $db->prepare($sql);

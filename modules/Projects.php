@@ -297,7 +297,7 @@ function getOthersProject($entityManager, $id) {
 function addProject($entityManager) {
 	try
 	{
-		$request = Slim::getInstance()->request();
+		$request = \Slim\Slim::getInstance()->request();
 		$input = json_decode($request->getBody());
 
 		$partner = $entityManager->getRepository('Partners')->findBy(array('id' => $input->Partner_id));

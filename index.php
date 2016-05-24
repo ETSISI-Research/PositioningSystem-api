@@ -5,6 +5,7 @@ use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 use \Slim\Middleware\HttpBasicAuthentication\PdoAuthenticator;
 
+
 $isDevMode = true;
 $srcPaths = array(__DIR__."/src");
 $config = Setup::createAnnotationMetadataConfiguration($srcPaths, $isDevMode, null, null, false);
