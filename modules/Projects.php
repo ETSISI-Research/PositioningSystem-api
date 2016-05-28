@@ -295,27 +295,21 @@ function getOthersProject($entityManager, $id) {
 }
 
 function addProject($entityManager) {
-	try
-	{
-		$request = \Slim\Slim::getInstance()->request();
-		$input = json_decode($request->getBody());
+	$request = \Slim\Slim::getInstance()->request();
+	$input = $request->post();
 
-		$partner = $entityManager->getRepository('Partners')->findBy(array('id' => $input->Partner_id));
-		$user = $entityManager->getRepository('Users')->findBy(array('id' => getId()));
+	$partner = $entityManager->getRepository('Partners')->findBy(array('id' => $input['partnerId']));
+	$user = $entityManager->getRepository('Users')->findBy(array('id' => getId()));
 
-		$project = new Projects();
-		$project->setName($input->name);
-		$project->setDescription($input->description);
-		$project->setCreationDate(new DateTime());
-		$project->setPartner($partner[0]);
-		$project->setUser($user[0]);
+	$project = new Projects();
+	$project->setName($input['name']);
+	$project->setDescription($input['description']);
+	$project->setCreationDate(new DateTime());
+	$project->setPartner($partner[0]);
+	$project->setUser($user[0]);
 
-		$entityManager->persist($project);
-		$entityManager->flush();
-	}
-	catch(Exception $e) {
-		echo '{"error":{"text":'. $e->getMessage() .'}}';
-	}
+	$entityManager->persist($project);
+	$entityManager->flush();
 }
 
 function updateProject($id) {

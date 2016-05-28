@@ -3,7 +3,12 @@
 $app->get('/products/:subfamilyId', function ($subfamilyId) use ($entityManager) {
         getProducts($entityManager, $subfamilyId);
     });
-$app->post('/products/:subFamilyId', 'addProduct');
+
+$app->post('/products', function () use ($entityManager) {
+	addProduct($entityManager);
+});
+
+
 $app->delete('/products/:productId', function ($productId) use ($entityManager) {
     deleteProduct($entityManager, $productId);
 });

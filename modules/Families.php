@@ -58,23 +58,27 @@ function getFamilies($entityManager, $projectId)
 
 
 function addFamily($entityManager) {
-	$request = Slim::getInstance()->request();
-	$family = json_decode($request->getBody());
-	$sql = "INSERT INTO families (Project_Id, name, description, Partner_Id, creationDate) VALUES (:projectId, :name, :description, :Partner_id, CURRENT_TIMESTAMP())";
+	$request = \Slim\Slim::getInstance()->request();
+	$family = $request->post();
+	$sql = "INSERT INTO families (Project_Id, name, description, Partner_Id) VALUES (:projectId, :name, :description, :partnerId)";
+
+
 	try {
-		$db = getConnection();
-		$stmt = $db->prepare($sql);
-		$stmt->bindParam("projectId", $projectId);
-		$stmt->bindParam("name", $family->name);
-		$stmt->bindParam("description", $family->description);
-		$stmt->bindParam("Partner_id", $family->Partner_id);
-		$stmt->execute();
-		$family->id = $db->lastInsertId();
+
+		$params['projectId'] = $family['project_Id'];
+		$params['name'] = $family['name'];
+		$params['description'] = $family['description'];
+		$params['partnerId'] = $family['partner_id'];
+		$db = $entityManager->getConnection()->prepare($sql);
+		$db->execute($params);
 		$db = null;
 		echo json_encode($sql);
 	} catch(PDOException $e) {
 		echo '{"error":{"text":'. $e->getMessage() .'}}';
 	}
+
+
+
 
 
 /*	$sql = "INSERT INTO families (project_id, name, description, Partner_Id, creationDate) VALUES (:projectId, :name, :description, :Partner_id, CURRENT_TIMESTAMP())";

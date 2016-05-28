@@ -53,31 +53,53 @@ function getPDO()
 
 function getId()
 {
-	$email = 'imponet@test.com';
+
+    if(isset($_SESSION['id'])) {
+        return $_SESSION['id'];
+    }
+    else {
+        return 1;
+    }
+	/*$email = 'imponet@test.com';
   $pdo = getPDO();
   $statement = $pdo->prepare("SELECT id FROM users WHERE email = :email");
   //$statement->bindParam('email', $_SERVER['PHP_AUTH_USER']);
 	$statement->bindParam('email', $email);
   $statement->execute();
-  return $statement->fetch(PDO::FETCH_OBJ)->id;
+  return $statement->fetch(PDO::FETCH_OBJ)->id;*/
+}
+
+function loginUser($entityManager, $email, $password)
+{
+	$repository = $entityManager->getRepository('Users');
+	$dbUser = $repository->findBy(array('email' => $email, 'password' => md5($password)));
+	if (empty($dbUser)) {
+		echo json_encode(array("response" => "error"));
+	}
+	else
+	{
+		$_SESSION['id'] = $dbUser[0]->getId();
+		echo json_encode(array("response" => "success"));
+	}
 }
 
 $app->get('/test',	function (){
-	// TODO
-	// this should generate jwt and return it back
-	echo json_encode(array("success" => "true"));
+
 });
 
 
-$app->get('/authenticate',	function (){
-  // TODO
-  // this should generate jwt and return it back
-  echo json_encode(array("success" => "true"));
+$app->post('/authenticate',	function () use ($entityManager) {
+    $request = \Slim\Slim::getInstance()->request();
+    $input = $request->post();
+    loginUser($entityManager, $input['email'], $input['password']);
 });
 
 $app->get('/signup/:firstName/:lastName/:email/:password',	function ($firstName, $lastName, $email, $password) use ($entityManager) {
         signUp($entityManager, $firstName, $lastName, $email, $password);
 });
+
+
+
 
 $app->post('/upload/:folder', function ($folder) use ($app) {
         uploadImage($app, $folder);

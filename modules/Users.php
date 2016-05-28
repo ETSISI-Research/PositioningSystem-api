@@ -13,8 +13,30 @@ $app->get('/users/:id',	function() use ($entityManager){
 	echo json_encode($user);
 });
 
-$app->post('/users', function(){
+$app->post('/users', function() use ($entityManager){
+	$request = \Slim\Slim::getInstance()->request();
+	$requestUser = $request->post();
 
+	$user = new Users();
+	$user->setName($requestUser['firstName']);
+	$user->setlastName($requestUser['lastName']);
+	$user->setEmail($requestUser['email']);
+	$user->setPassword(md5($requestUser['password']));
+	$user->setCreationDate(new DateTime());
+
+	$repository = $entityManager->getRepository('Users');
+
+	$dbUser = $repository->findBy(array('email' => $requestUser['email']));
+
+	if (empty($dbUser)) {
+		$entityManager->persist($user);
+		$entityManager->flush();
+		echo json_encode(array("response" => "success"));
+	}
+	else
+	{
+		echo json_encode(array("response" => "error"));
+	}
 });
 
 $app->put('/users/:id', function() use ($entityManager){
