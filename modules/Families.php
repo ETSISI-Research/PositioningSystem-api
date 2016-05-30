@@ -65,10 +65,10 @@ function addFamily($entityManager) {
 
 	try {
 
-		$params['projectId'] = $family['project_Id'];
+		$params['projectId'] = $family['projectId'];
 		$params['name'] = $family['name'];
 		$params['description'] = $family['description'];
-		$params['partnerId'] = $family['partner_id'];
+		$params['partnerId'] = $family['partnerId'];
 		$db = $entityManager->getConnection()->prepare($sql);
 		$db->execute($params);
 		$db = null;

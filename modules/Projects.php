@@ -188,9 +188,9 @@ function getOthersProjects($entityManager) {
 }
 
 function projectInvite($entityManager, $projectId) {
-	$request = Slim::getInstance()->request();
-	$contact = json_decode($request->getBody());
-	$email = $contact->email;
+	$request = \Slim\Slim::getInstance()->request();
+	$contact = $request->post();
+	$email = $contact['email'];
 	$user = $entityManager->getRepository('Users')->findBy(array('id' => getId()));
 	$invited = $entityManager->getRepository('Users')->findBy(array('email' => $email));
 	$project = $entityManager->getRepository('Projects')->findBy(array('id' => $projectId));
@@ -203,7 +203,7 @@ function projectInvite($entityManager, $projectId) {
 		{
 			try{
 				$privileges = new Privileges();
-				$privileges->setAccessLevel(1);
+				//$privileges->setAccessLevel(1);
 				$privileges->setProjects($project[0]);
 				$privileges->setPrivilegesUsers($invited[0]);
 
