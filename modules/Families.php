@@ -58,12 +58,12 @@ function getFamilies($entityManager, $projectId)
 
 
 function addFamily($entityManager) {
-	$request = \Slim\Slim::getInstance()->request();
-	$family = $request->post();
-	$sql = "INSERT INTO families (Project_Id, name, description, Partner_Id) VALUES (:projectId, :name, :description, :partnerId)";
-
 
 	try {
+		$request = \Slim\Slim::getInstance()->request();
+		$family = $request->post();
+		$sql = "INSERT INTO families (Project_Id, name, description, Partner_Id) VALUES (:projectId, :name, :description, :partnerId)";
+
 
 		$params['projectId'] = $family['projectId'];
 		$params['name'] = $family['name'];

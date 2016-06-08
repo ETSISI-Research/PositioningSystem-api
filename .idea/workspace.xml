@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="26fb9e7b-ec94-4390-8adc-a9ed21b74fe9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Families.php" afterPath="$PROJECT_DIR$/modules/Families.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Projects.php" afterPath="$PROJECT_DIR$/modules/Projects.php" />
     </list>
     <ignored path="PositioningSystem-api.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,72 +26,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+            <state relative-caret-position="330">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding>
                 <element signature="e#38#67#0#PHP" expanded="true" />
-                <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-                <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Families.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/Families.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
-              <folding>
-                <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-                <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-                <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+                <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+                <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Families.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Families.php">
+        <entry file="file://$PROJECT_DIR$/modules/Families.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Messages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Messages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Projects.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Projects.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1031">
-              <caret line="216" column="9" selection-start-line="216" selection-start-column="9" selection-end-line="216" selection-end-column="9" />
+            <state relative-caret-position="930">
+              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
               <folding>
-                <marker date="1464625397000" expanded="true" signature="10709:10802" ph="UPDATE proje... " />
+                <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+                <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+                <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Privileges.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Privileges.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-566">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -110,8 +68,8 @@
         <option value="$PROJECT_DIR$/modules/Users.php" />
         <option value="$PROJECT_DIR$/modules/Products.php" />
         <option value="$PROJECT_DIR$/modules/Projects.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/modules/Families.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -126,7 +84,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="708" />
   </component>
@@ -259,15 +217,16 @@
       <workItem from="1464215579386" duration="60000" />
       <workItem from="1464428816346" duration="2501000" />
       <workItem from="1464521257789" duration="400000" />
-      <workItem from="1464621778459" duration="1481000" />
+      <workItem from="1464621778459" duration="2491000" />
+      <workItem from="1464706916673" duration="764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17995000" />
+    <option name="totallyTimeSpent" value="19769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1280" height="708" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="708" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -321,7 +280,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -332,8 +291,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -343,9 +302,9 @@
         <state relative-caret-position="900">
           <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="61" selection-end-column="31" />
           <folding>
-            <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-            <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-            <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+            <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+            <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+            <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
           </folding>
         </state>
       </provider>
@@ -354,12 +313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1446996490000" expanded="true" signature="692:846" ph="INSERT INTO subfamilies... " />
-            <marker date="1446996490000" expanded="true" signature="1379:1582" ph="SELECT s.id,... subfamilies" />
-            <marker date="1446996490000" expanded="true" signature="1912:2017" ph="UPDATE subfa... " />
-            <marker date="1446996490000" expanded="true" signature="2523:2936" ph="SELECT s.id,... subfamilies" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -367,9 +320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4605">
           <caret line="307" column="11" selection-start-line="307" selection-start-column="11" selection-end-line="307" selection-end-column="11" />
-          <folding>
-            <marker date="1464625397000" expanded="true" signature="10709:10802" ph="UPDATE proje... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -377,10 +327,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
           <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-          <folding>
-            <marker date="1464445494000" expanded="true" signature="3858:4015" ph="INSERT INTO products... " />
-            <marker date="1464445494000" expanded="true" signature="4645:4801" ph="UPDATE produ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -388,7 +334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -398,8 +343,8 @@
           <caret line="124" column="24" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="24" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -409,9 +354,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-            <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-            <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+            <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+            <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+            <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
           </folding>
         </state>
       </provider>
@@ -429,8 +374,8 @@
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -440,9 +385,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-            <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-            <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+            <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+            <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+            <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
           </folding>
         </state>
       </provider>
@@ -460,8 +405,8 @@
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -471,9 +416,9 @@
         <state relative-caret-position="1020">
           <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
           <folding>
-            <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-            <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-            <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+            <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+            <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+            <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
           </folding>
         </state>
       </provider>
@@ -491,8 +436,8 @@
           <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -502,9 +447,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-            <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-            <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+            <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+            <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+            <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
           </folding>
         </state>
       </provider>
@@ -515,8 +460,8 @@
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -533,9 +478,9 @@
         <state relative-caret-position="1545">
           <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
           <folding>
-            <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-            <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-            <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+            <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+            <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+            <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
           </folding>
         </state>
       </provider>
@@ -560,8 +505,8 @@
           <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -593,8 +538,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -612,8 +557,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>
@@ -706,12 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1446996490000" expanded="true" signature="692:846" ph="INSERT INTO subfamilies... " />
-            <marker date="1446996490000" expanded="true" signature="1379:1582" ph="SELECT s.id,... subfamilies" />
-            <marker date="1446996490000" expanded="true" signature="1912:2017" ph="UPDATE subfa... " />
-            <marker date="1446996490000" expanded="true" signature="2523:2936" ph="SELECT s.id,... subfamilies" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,12 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#getPartners#0;n#!!top" expanded="false" />
-            <element signature="n#getPartner#0;n#!!top" expanded="false" />
-            <marker date="1449524413000" expanded="true" signature="2484:2577" ph="UPDATE partn... " />
-            <marker date="1449524413000" expanded="true" signature="3020:3053" ph="DELETE FROM " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,10 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding>
-            <marker date="1464445494000" expanded="true" signature="3858:4015" ph="INSERT INTO products... " />
-            <marker date="1464445494000" expanded="true" signature="4645:4801" ph="UPDATE produ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,7 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-566">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,21 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1031">
           <caret line="216" column="9" selection-start-line="216" selection-start-column="9" selection-end-line="216" selection-end-column="9" />
-          <folding>
-            <marker date="1464625397000" expanded="true" signature="10709:10802" ph="UPDATE proje... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
-          <folding>
-            <element signature="e#38#67#0#PHP" expanded="true" />
-            <marker date="1464629604000" expanded="true" signature="1471:1512" ph="SELECT id FR... users" />
-            <marker date="1464629604000" expanded="true" signature="3888:3936" ph="UPDATE ${$fo... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -781,7 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-480">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,18 +700,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/Families.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="70" column="48" selection-start-line="70" selection-start-column="48" selection-end-line="70" selection-end-column="48" />
+        <state relative-caret-position="930">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
           <folding>
-            <marker date="1464631375000" expanded="true" signature="1858:1975" ph="INSERT INTO families... " />
-            <marker date="1464631375000" expanded="true" signature="2831:3119" ph="SELECT f.id,... families" />
-            <marker date="1464631375000" expanded="true" signature="3414:3523" ph="UPDATE famil... " />
+            <marker date="1464707031000" expanded="true" signature="1869:1986" ph="INSERT INTO families... " />
+            <marker date="1464707031000" expanded="true" signature="2834:3122" ph="SELECT f.id,... families" />
+            <marker date="1464707031000" expanded="true" signature="3417:3526" ph="UPDATE famil... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#38#67#0#PHP" expanded="true" />
+            <marker date="1464708320000" expanded="true" signature="1470:1511" ph="SELECT id FR... users" />
+            <marker date="1464708320000" expanded="true" signature="3900:3948" ph="UPDATE ${$fo... " />
           </folding>
         </state>
       </provider>

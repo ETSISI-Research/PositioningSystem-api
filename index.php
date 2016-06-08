@@ -20,7 +20,6 @@ $conn = array(
 
 $entityManager = EntityManager::create($conn, $config);
 
-
 $app = new \Slim\Slim();
 
 require 'modules/Countries.php';
@@ -84,7 +83,7 @@ function loginUser($entityManager, $email, $password)
 }
 
 $app->get('/test',	function (){
-
+	echo "test";
 });
 
 
@@ -182,4 +181,4 @@ function signUp($entityManager, $firstName, $lastName, $email, $password)
 	}
 }
 
-?>
+
