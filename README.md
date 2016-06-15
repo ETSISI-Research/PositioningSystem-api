@@ -1,5 +1,13 @@
 # PositioningSystem-api
 
+## Prerequisites
+
+
+
+## Installation
+
+
+
 ## Notes
 
 <strong>Doctrine notes:</strong>
