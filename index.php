@@ -20,7 +20,7 @@ $conn = array(
 
 $entityManager = EntityManager::create($conn, $config);
 
-$app = new \Slim\Slim();
+$app = new Slim();
 
 require 'modules/Countries.php';
 require 'modules/Products.php';
@@ -180,5 +180,3 @@ function signUp($entityManager, $firstName, $lastName, $email, $password)
 		echo json_encode(array("response" => "error"));
 	}
 }
-
-
