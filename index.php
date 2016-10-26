@@ -5,7 +5,6 @@ use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 use \Slim\Middleware\HttpBasicAuthentication\PdoAuthenticator;
 
-
 $isDevMode = true;
 $srcPaths = array(__DIR__."/src");
 $config = Setup::createAnnotationMetadataConfiguration($srcPaths, $isDevMode, null, null, false);
@@ -20,7 +19,7 @@ $conn = array(
 
 $entityManager = EntityManager::create($conn, $config);
 
-$app = new Slim();
+$app = new \Slim\Slim();
 
 require 'modules/Countries.php';
 require 'modules/Products.php';
@@ -86,6 +85,9 @@ $app->get('/test',	function (){
 	echo "test";
 });
 
+$app->get('/authenticate',	function () use ($entityManager) {
+    echo "success";
+});
 
 $app->post('/authenticate',	function () use ($entityManager) {
     $request = \Slim\Slim::getInstance()->request();
