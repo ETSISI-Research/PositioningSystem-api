@@ -36,7 +36,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = [];
+    public static $lazyPropertiesDefaults = array();
 
 
 
@@ -64,10 +64,10 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'Users' . "\0" . 'id', '' . "\0" . 'Users' . "\0" . 'name', '' . "\0" . 'Users' . "\0" . 'lastname', '' . "\0" . 'Users' . "\0" . 'email', '' . "\0" . 'Users' . "\0" . 'password', '' . "\0" . 'Users' . "\0" . 'creationdate'];
+            return array('__isInitialized__', '' . "\0" . 'Users' . "\0" . 'id', '' . "\0" . 'Users' . "\0" . 'name', '' . "\0" . 'Users' . "\0" . 'lastname', '' . "\0" . 'Users' . "\0" . 'email', '' . "\0" . 'Users' . "\0" . 'password', '' . "\0" . 'Users' . "\0" . 'creationdate');
         }
 
-        return ['__isInitialized__', '' . "\0" . 'Users' . "\0" . 'id', '' . "\0" . 'Users' . "\0" . 'name', '' . "\0" . 'Users' . "\0" . 'lastname', '' . "\0" . 'Users' . "\0" . 'email', '' . "\0" . 'Users' . "\0" . 'password', '' . "\0" . 'Users' . "\0" . 'creationdate'];
+        return array('__isInitialized__', '' . "\0" . 'Users' . "\0" . 'id', '' . "\0" . 'Users' . "\0" . 'name', '' . "\0" . 'Users' . "\0" . 'lastname', '' . "\0" . 'Users' . "\0" . 'email', '' . "\0" . 'Users' . "\0" . 'password', '' . "\0" . 'Users' . "\0" . 'creationdate');
     }
 
     /**
@@ -97,7 +97,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __clone()
     {
-        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
+        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', array());
     }
 
     /**
@@ -105,7 +105,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __load()
     {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', array());
     }
 
     /**
@@ -179,7 +179,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function JsonSerialize()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', array());
 
         return parent::JsonSerialize();
     }
@@ -194,7 +194,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
         }
 
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', array());
 
         return parent::getId();
     }
@@ -205,7 +205,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function getName()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', array());
 
         return parent::getName();
     }
@@ -216,7 +216,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function setName($name)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', [$name]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', array($name));
 
         return parent::setName($name);
     }
@@ -227,7 +227,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function getLastName()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLastName', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLastName', array());
 
         return parent::getLastName();
     }
@@ -238,7 +238,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function setLastName($lastname)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLastName', [$lastname]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLastName', array($lastname));
 
         return parent::setLastName($lastname);
     }
@@ -249,7 +249,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function getEmail()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEmail', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEmail', array());
 
         return parent::getEmail();
     }
@@ -260,7 +260,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function setEmail($email)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEmail', [$email]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEmail', array($email));
 
         return parent::setEmail($email);
     }
@@ -271,7 +271,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function getPassword()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPassword', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPassword', array());
 
         return parent::getPassword();
     }
@@ -282,7 +282,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function setPassword($password)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPassword', [$password]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPassword', array($password));
 
         return parent::setPassword($password);
     }
@@ -293,7 +293,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function getCreationDate()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCreationDate', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCreationDate', array());
 
         return parent::getCreationDate();
     }
@@ -304,7 +304,7 @@ class Users extends \Users implements \Doctrine\ORM\Proxy\Proxy
     public function setCreationDate($creationdate)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCreationDate', [$creationdate]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCreationDate', array($creationdate));
 
         return parent::setCreationDate($creationdate);
     }

@@ -19,7 +19,7 @@ $conn = array(
 
 $entityManager = EntityManager::create($conn, $config);
 
-$app = new Slim();
+$app = new Slim\Slim();
 
 require 'modules/Countries.php';
 require 'modules/Products.php';

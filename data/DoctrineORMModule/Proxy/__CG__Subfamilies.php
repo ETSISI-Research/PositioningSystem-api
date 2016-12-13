@@ -36,7 +36,7 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = [];
+    public static $lazyPropertiesDefaults = array();
 
 
 
@@ -64,10 +64,10 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'Subfamilies' . "\0" . 'id', '' . "\0" . 'Subfamilies' . "\0" . 'name', '' . "\0" . 'Subfamilies' . "\0" . 'description', '' . "\0" . 'Subfamilies' . "\0" . 'creationdate', '' . "\0" . 'Subfamilies' . "\0" . 'partner', '' . "\0" . 'Subfamilies' . "\0" . 'family'];
+            return array('__isInitialized__', '' . "\0" . 'Subfamilies' . "\0" . 'id', '' . "\0" . 'Subfamilies' . "\0" . 'name', '' . "\0" . 'Subfamilies' . "\0" . 'description', '' . "\0" . 'Subfamilies' . "\0" . 'creationdate', '' . "\0" . 'Subfamilies' . "\0" . 'partner', '' . "\0" . 'Subfamilies' . "\0" . 'family');
         }
 
-        return ['__isInitialized__', '' . "\0" . 'Subfamilies' . "\0" . 'id', '' . "\0" . 'Subfamilies' . "\0" . 'name', '' . "\0" . 'Subfamilies' . "\0" . 'description', '' . "\0" . 'Subfamilies' . "\0" . 'creationdate', '' . "\0" . 'Subfamilies' . "\0" . 'partner', '' . "\0" . 'Subfamilies' . "\0" . 'family'];
+        return array('__isInitialized__', '' . "\0" . 'Subfamilies' . "\0" . 'id', '' . "\0" . 'Subfamilies' . "\0" . 'name', '' . "\0" . 'Subfamilies' . "\0" . 'description', '' . "\0" . 'Subfamilies' . "\0" . 'creationdate', '' . "\0" . 'Subfamilies' . "\0" . 'partner', '' . "\0" . 'Subfamilies' . "\0" . 'family');
     }
 
     /**
@@ -97,7 +97,7 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __clone()
     {
-        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
+        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', array());
     }
 
     /**
@@ -105,7 +105,7 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __load()
     {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', array());
     }
 
     /**
@@ -179,7 +179,7 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
     public function JsonSerialize()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', array());
 
         return parent::JsonSerialize();
     }
@@ -194,7 +194,7 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
         }
 
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', array());
 
         return parent::getId();
     }
@@ -205,7 +205,7 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
     public function getFamily()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFamily', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getFamily', array());
 
         return parent::getFamily();
     }
@@ -216,7 +216,7 @@ class Subfamilies extends \Subfamilies implements \Doctrine\ORM\Proxy\Proxy
     public function getName()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', array());
 
         return parent::getName();
     }

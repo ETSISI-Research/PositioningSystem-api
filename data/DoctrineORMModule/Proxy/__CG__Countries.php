@@ -36,7 +36,7 @@ class Countries extends \Countries implements \Doctrine\ORM\Proxy\Proxy
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = [];
+    public static $lazyPropertiesDefaults = array();
 
 
 
@@ -64,10 +64,10 @@ class Countries extends \Countries implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'Countries' . "\0" . 'id', '' . "\0" . 'Countries' . "\0" . 'name', '' . "\0" . 'Countries' . "\0" . 'code'];
+            return array('__isInitialized__', '' . "\0" . 'Countries' . "\0" . 'id', '' . "\0" . 'Countries' . "\0" . 'name', '' . "\0" . 'Countries' . "\0" . 'code');
         }
 
-        return ['__isInitialized__', '' . "\0" . 'Countries' . "\0" . 'id', '' . "\0" . 'Countries' . "\0" . 'name', '' . "\0" . 'Countries' . "\0" . 'code'];
+        return array('__isInitialized__', '' . "\0" . 'Countries' . "\0" . 'id', '' . "\0" . 'Countries' . "\0" . 'name', '' . "\0" . 'Countries' . "\0" . 'code');
     }
 
     /**
@@ -97,7 +97,7 @@ class Countries extends \Countries implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __clone()
     {
-        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
+        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', array());
     }
 
     /**
@@ -105,7 +105,7 @@ class Countries extends \Countries implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __load()
     {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', array());
     }
 
     /**
@@ -179,7 +179,7 @@ class Countries extends \Countries implements \Doctrine\ORM\Proxy\Proxy
     public function JsonSerialize()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', array());
 
         return parent::JsonSerialize();
     }
@@ -190,7 +190,7 @@ class Countries extends \Countries implements \Doctrine\ORM\Proxy\Proxy
     public function getName()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', array());
 
         return parent::getName();
     }
@@ -201,7 +201,7 @@ class Countries extends \Countries implements \Doctrine\ORM\Proxy\Proxy
     public function getCode()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCode', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCode', array());
 
         return parent::getCode();
     }

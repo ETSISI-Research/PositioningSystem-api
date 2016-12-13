@@ -36,7 +36,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
      *
      * @see \Doctrine\Common\Persistence\Proxy::__getLazyProperties
      */
-    public static $lazyPropertiesDefaults = [];
+    public static $lazyPropertiesDefaults = array();
 
 
 
@@ -64,10 +64,10 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'Partners' . "\0" . 'id', '' . "\0" . 'Partners' . "\0" . 'name', '' . "\0" . 'Partners' . "\0" . 'description', '' . "\0" . 'Partners' . "\0" . 'creationdate', '' . "\0" . 'Partners' . "\0" . 'image', '' . "\0" . 'Partners' . "\0" . 'country', '' . "\0" . 'Partners' . "\0" . 'users'];
+            return array('__isInitialized__', '' . "\0" . 'Partners' . "\0" . 'id', '' . "\0" . 'Partners' . "\0" . 'name', '' . "\0" . 'Partners' . "\0" . 'description', '' . "\0" . 'Partners' . "\0" . 'creationdate', '' . "\0" . 'Partners' . "\0" . 'image', '' . "\0" . 'Partners' . "\0" . 'country', '' . "\0" . 'Partners' . "\0" . 'users');
         }
 
-        return ['__isInitialized__', '' . "\0" . 'Partners' . "\0" . 'id', '' . "\0" . 'Partners' . "\0" . 'name', '' . "\0" . 'Partners' . "\0" . 'description', '' . "\0" . 'Partners' . "\0" . 'creationdate', '' . "\0" . 'Partners' . "\0" . 'image', '' . "\0" . 'Partners' . "\0" . 'country', '' . "\0" . 'Partners' . "\0" . 'users'];
+        return array('__isInitialized__', '' . "\0" . 'Partners' . "\0" . 'id', '' . "\0" . 'Partners' . "\0" . 'name', '' . "\0" . 'Partners' . "\0" . 'description', '' . "\0" . 'Partners' . "\0" . 'creationdate', '' . "\0" . 'Partners' . "\0" . 'image', '' . "\0" . 'Partners' . "\0" . 'country', '' . "\0" . 'Partners' . "\0" . 'users');
     }
 
     /**
@@ -97,7 +97,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __clone()
     {
-        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', []);
+        $this->__cloner__ && $this->__cloner__->__invoke($this, '__clone', array());
     }
 
     /**
@@ -105,7 +105,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
      */
     public function __load()
     {
-        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, '__load', array());
     }
 
     /**
@@ -179,7 +179,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function JsonSerialize()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'JsonSerialize', array());
 
         return parent::JsonSerialize();
     }
@@ -194,7 +194,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
         }
 
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getId', array());
 
         return parent::getId();
     }
@@ -205,7 +205,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function getName()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', array());
 
         return parent::getName();
     }
@@ -216,7 +216,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function setName($name)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', [$name]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', array($name));
 
         return parent::setName($name);
     }
@@ -227,7 +227,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function getDescription()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDescription', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDescription', array());
 
         return parent::getDescription();
     }
@@ -238,7 +238,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function setDescription($description)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDescription', [$description]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDescription', array($description));
 
         return parent::setDescription($description);
     }
@@ -249,7 +249,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function getCountry()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCountry', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCountry', array());
 
         return parent::getCountry();
     }
@@ -260,7 +260,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function getImage()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getImage', array());
 
         return parent::getImage();
     }
@@ -271,7 +271,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function setCountry($country)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCountry', [$country]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCountry', array($country));
 
         return parent::setCountry($country);
     }
@@ -282,7 +282,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function getCreationDate()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCreationDate', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCreationDate', array());
 
         return parent::getCreationDate();
     }
@@ -293,7 +293,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function setCreationDate($creationdate)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCreationDate', [$creationdate]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCreationDate', array($creationdate));
 
         return parent::setCreationDate($creationdate);
     }
@@ -304,7 +304,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function getUsers()
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsers', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsers', array());
 
         return parent::getUsers();
     }
@@ -315,7 +315,7 @@ class Partners extends \Partners implements \Doctrine\ORM\Proxy\Proxy
     public function setUsers($users)
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsers', [$users]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsers', array($users));
 
         return parent::setUsers($users);
     }
