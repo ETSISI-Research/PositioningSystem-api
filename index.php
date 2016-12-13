@@ -7,7 +7,7 @@ use \Slim\Middleware\HttpBasicAuthentication\PdoAuthenticator;
 
 $isDevMode = true;
 $srcPaths = array(__DIR__."/src");
-$config = Setup::createAnnotationMetadataConfiguration($srcPaths, $isDevMode, null, null, false);
+$config = Setup::createAnnotationMetadataConfiguration($srcPaths, $isDevMode, "data/DoctrineORMModule/Proxy", null, false);
 
 $conn = array(
     'driver'   => 'pdo_mysql',
@@ -19,7 +19,7 @@ $conn = array(
 
 $entityManager = EntityManager::create($conn, $config);
 
-$app = new \Slim\Slim();
+$app = new Slim();
 
 require 'modules/Countries.php';
 require 'modules/Products.php';
@@ -46,7 +46,7 @@ $pdo = getPDO();
 
 function getPDO()
 {
-  return new \PDO("mysql:host=localhost;port=3306;dbname=ps",'root','');
+  //return new \PDO("mysql:host=localhost;port=3306;dbname=ps",'root','');
 }
 
 function getId()
