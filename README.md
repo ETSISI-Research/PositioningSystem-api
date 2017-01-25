@@ -8,7 +8,7 @@
 
 ## Installation
 
-
+chmod folders data/DoctrineORMModule/Proxy if error is raised
 
 ## Notes
 
