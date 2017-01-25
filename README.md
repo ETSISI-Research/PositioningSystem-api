@@ -8,7 +8,9 @@
 
 ## Installation
 
-chmod folders data/DoctrineORMModule/Proxy if error is raised
+* Apache server should have mod_rewrite enabled
+
+* chmod folders data/DoctrineORMModule/Proxy if error is raised
 
 ## Notes
 
